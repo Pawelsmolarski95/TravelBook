@@ -1,4 +1,5 @@
 
+export const getAllPosts = ( state ) => state.posts ; 
 
 //actions
 const createActionName = actionName => `app/lists/${actionName}`;

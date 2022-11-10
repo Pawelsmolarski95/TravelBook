@@ -1,10 +1,11 @@
 
+import Posts from '../../features/Posts/Posts';
 
 
 const Home = () => {
     return(
         <main>
-            <p>Tu będą wszystkie posty</p>
+            <Posts/>
         </main>
     )
 }

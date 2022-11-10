@@ -5,7 +5,7 @@ import store from './redux/store';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/normalize.scss';
+import 'font-awesome/css/font-awesome.min.css';
 import './styles/global.scss';
 
 ReactDOM.render(
