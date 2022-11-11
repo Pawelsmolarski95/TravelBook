@@ -33,7 +33,7 @@ const initialState = {
         },
         {   
             image:'https://images.pexels.com/photos/14302438/pexels-photo-14302438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            id: '3',
+            id: '4',
             destination: 'Italy',
             title: 'Article title',
             shortDescription: 'Short description of the article...',
@@ -43,7 +43,7 @@ const initialState = {
         },
         {   
             image:'https://images.pexels.com/photos/14302438/pexels-photo-14302438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-            id: '3',
+            id: '5',
             destination: 'Italy',
             title: 'Article title',
             shortDescription: 'Short description of the article...',

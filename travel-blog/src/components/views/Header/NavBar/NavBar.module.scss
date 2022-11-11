@@ -1,3 +1,75 @@
+* {
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.navbar {
+    background-color: rgb(33, 37, 41);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    line-height: 3;
+    min-width: 350px;
+    
+}
+
+.title {
+    color: whitesmoke;
+    font-weight: 600;
+    letter-spacing: 2px;
+    
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+        letter-spacing: 3px;
+        font-size: 38px;
+        font-family: 'Dancing Script', cursive;
+    }
+}
+
+.MobileNavigation {
+    display: none;
+    
+}
+
+.DeskopNavigation {
+    display: flex;
+}
+
 .hamburger {
     display: none;
+}
+
+.logo {
+    margin-left: 6px;
+}
+
+@media (max-width: 767px) {
+    
+    .DeskopNavigation {
+        display: none;
+    }
+    
+    .MobileNavigation {
+        background-color: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-content:center ;
+        justify-content: center;
+        
+    }
+    
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: 15px;
+    }
+    
 }

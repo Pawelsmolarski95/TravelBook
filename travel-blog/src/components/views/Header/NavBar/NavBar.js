@@ -1,23 +1,35 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { NavLink } from 'react-router-dom';
+
 import styles from  './NavBar.module.scss'
+import MobileNavigation from './MobileNavigation/MobileNavigation';
+import DeskopNavigation from './DeskopNavigation/DeskopNavigation';
+import {GiHamburgerMenu} from 'react-icons/gi';
+import {GiPalmTree} from 'react-icons/gi';
+import { useState } from "react";
+
 
 const NavBar = () => {
+  
+  const [open,setOpen] = useState(false)
+  
     return (
         <>
-          <Navbar bg="dark" variant="dark" className="rounded ">
-            <Container className="d-flex flex-column flex-sm-column  flex-md-column flex-lg-row flex-xl-row justify-content-between">
-              <Navbar.Brand href="#home">Your Travel Blog</Navbar.Brand>
-              <Nav className='flex-column flex-sm-column  flex-md-column flex-lg-row flex-xl-row' >
-                  <Nav.Link  as={NavLink} to="/">Home</Nav.Link>
-                  <Nav.Link  as={NavLink} to="/about">About</Nav.Link>
-              </Nav>
-            </Container>
-          </Navbar>
+          <div className={styles.navbar}>
+            <h3 className={styles.title}>
+              <a href="/">
+                TravelBook 
+                <GiPalmTree className={styles.logo} size="36px" color="white" />
+              </a>
+            </h3>
+            <div className={styles.MobileNavigation}>
+                <MobileNavigation open={open}/>
+              </div>
+              <div className={styles.DeskopNavigation}>
+                <DeskopNavigation />
+              </div>
+              <GiHamburgerMenu className={styles.hamburger} size="40px" color="white" onClick={()=> setOpen(!open)}/> 
+          </div>
+  
         </>
-        
     )
 }
 
