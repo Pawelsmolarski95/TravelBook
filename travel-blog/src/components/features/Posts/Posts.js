@@ -9,6 +9,7 @@ import styles from './Posts.module.scss'
 const Posts = () => {
     
     const posts = useSelector(getAllPosts)
+    console.log(getAllPosts)
     return (
         <main>
             <div className={styles.title}>
@@ -18,6 +19,7 @@ const Posts = () => {
             <Container className='d-inline-flex flex-row flex-wrap gap-3 justify-content-around align-content-center mt-5'>
                 {posts.map(post => (
                     <Post 
+                        id={post.id}
                         image={post.image}
                         key={post.id}
                         destination={post.destination}

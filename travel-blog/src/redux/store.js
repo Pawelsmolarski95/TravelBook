@@ -4,6 +4,7 @@ import postsReducer from './postsRedux';
 
 
 export const getAllPosts = ({ posts }) => posts ; 
+export const getPostById = ({ posts }, postId) => posts.find(post => post.id === postId)
 
   const subreducers = {
     posts: postsReducer
