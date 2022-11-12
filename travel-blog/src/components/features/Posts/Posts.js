@@ -4,6 +4,7 @@ import { getAllPosts } from '../../../redux/postsRedux';
 import Post from '../Post/Post';
 import { Button } from 'react-bootstrap';
 import styles from './Posts.module.scss'
+import { Link } from 'react-router-dom';
 
 
 const Posts = () => {
@@ -14,7 +15,7 @@ const Posts = () => {
         <main>
             <div className={styles.title}>
                 <h1 className={styles.subtitle}>Tell us about yours last travel...</h1>
-                <Button variant="success" className={styles.btn}>Add new post</Button> 
+                <Button variant="success" className={styles.btn} as={Link} to="/post/add">Add new post</Button> 
             </div>
             <Container className='d-inline-flex flex-row flex-wrap gap-3 justify-content-around align-content-center mt-5'>
                 {posts.map(post => (

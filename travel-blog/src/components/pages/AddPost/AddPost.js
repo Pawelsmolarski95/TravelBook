@@ -1,8 +1,9 @@
+import AddFormPost from "../../features/AddFormPost/AddFormPost";
 
 
 const AddPost = () => {
     return (
-        <p>Tu będziemy dodoawać posty</p>
+        <AddFormPost/>
     )
 }
 
