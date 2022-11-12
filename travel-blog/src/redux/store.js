@@ -1,14 +1,13 @@
-import { createStore, combineReducers  } from 'redux';
-import initialState from './initialState';
-import postsReducer from './postsRedux';
+import { createStore, combineReducers  } from "redux";
+import initialState from "./initialState";
+import postsReducer from "./postsRedux";
 
 
-export const getAllPosts = ({ posts }) => posts ; 
-export const getPostById = ({ posts }, postId) => posts.find(post => post.id === postId)
+
 
   const subreducers = {
-    posts: postsReducer
-  }
+    posts: postsReducer,
+  };
   
   const reducer = combineReducers(subreducers);
   
