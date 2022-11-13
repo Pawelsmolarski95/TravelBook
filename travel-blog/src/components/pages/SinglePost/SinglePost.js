@@ -36,7 +36,7 @@ const SinglePost = () => {
             <div className={styles.card}>
                 <Link to="/" className={styles.return}><Button variant="primary"><AiOutlineArrowLeft className={styles.return}/></Button></Link>    
                 <div className={styles.rightBtn}>
-                    <Button > Edit </Button>
+                    <Button as={Link} to={"/post/edit/" + id } > Edit </Button>
                     <Button onClick={openModal}> Delete </Button> 
                 </div>
             </div>

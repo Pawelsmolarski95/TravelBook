@@ -1,10 +1,14 @@
+import EditFormPost from '../../features/EditFormPost/EditFormPost';
 
 
 const EditPost = () => {
+    
+    console.log("EditPost")
+    
     return (
-        <p> Tu bedziemy edytowac post</p>
+        <main>
+            <EditFormPost/>
+        </main>
     )
 }
-
 export default EditPost;
- 

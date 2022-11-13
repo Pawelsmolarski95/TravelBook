@@ -20,7 +20,7 @@ const initialState = {
             shortDescription: 'Spain is one of our favorite countries to visit...',
             content: 'Main content of the article',
             publishedDate: '24-07-2022',
-            author: 'Jack ',
+            author: 'Jack Sparrow',
             mainDescription: 'No matter how much you have read or how many pictures you have seen of Granadas Alhambra palaces this Moorish pleasure palace will still take your breath away. The Nasrid dynastys royal palace is the artistic highlight of Spains Islamic period, when Al-Andalus - as they called Andalucía - represented the epitome of culture and civilization in medieval Europe The Alhambra complex includes several buildings towers walls, gardens, and a mosque but its the indescribably intricate stone carvings, the delicate filigrees, the magnificent tile-lined ceilings, the graceful arches, and serene courtyards of the Nasrid palace that will haunt your dreams That said, the adjoining palace built for the Emperor Charles V, even in its unfinished state is the finest example of High Renaissance architecture in Spain. And Generalifs terraced gardens offer a peaceful respite from the grandeur, and splendid views back at the rest of the Alhambra.'
         },
         {   
