@@ -6,3 +6,13 @@
     font-size: 24px;
 }
 
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn {
+    align-self: center;
+    justify-self: flex-end;
+}

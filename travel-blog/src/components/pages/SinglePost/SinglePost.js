@@ -41,16 +41,18 @@ const SinglePost = () => {
                 </div>
             </div>
             <Card className='col-xl-6 col-md-6 col-sm-12 m-2 shadow p-3 mb-3 bg-white rounded media ' >
-                <Card.Img variant="top" style={{height:'20rem',width:'100%'}} src={postData.image} />
+                <Card.Img variant="top" style={{height:'20rem',width:'100%'}} src={postData.image ? postData.image : 'https://picsum.photos/600' } />
                 <h3 className={styles.title}>{postData.destination}</h3>
                 <Card.Body >
                     <Card.Title className={styles.title}>{postData.title}</Card.Title>
-                    <Card.Text>
-                        {postData.mainDescription}
+                    <Card.Text className="text-justify">
+                        <p className={styles.p}>
+                            {postData.mainDescription}
+                        </p>
                     </Card.Text>
                     <Card.Text >
-                        <p>Data: {postData.publishedDate}</p> 
-                        <p>Traveler: {postData.author} </p>
+                        <p><b>Data:</b> {postData.publishedDate}</p> 
+                        <p><b>Traveler:</b> {postData.author} </p>
                     </Card.Text>            
                 </Card.Body>
             </Card>
