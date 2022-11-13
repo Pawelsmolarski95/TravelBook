@@ -1,5 +1,5 @@
-Simple CRUD app: Travelbook
-online: yourtravelbook.netlify.app
+Simple CRUD app: Travelbook.
+online: https://yourtravelbook.netlify.app
 
 # Getting Started with Create React App
 
