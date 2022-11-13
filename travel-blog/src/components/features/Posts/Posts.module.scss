@@ -16,3 +16,10 @@
     height: 38px;
     
 }
+@media (max-width: 767px) {
+    .title {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -97,7 +97,7 @@ const PostForm = ({action,actionText, ...props}) => {
                         <Form.Control
                         as="textarea"
                         placeholder="Main Description"
-                        style={{ height: '100px' }}
+                        style={{ height: '150px' }}
                         value={mainDescription}
                         onChange={(e) => setMainDescription(e.target.value)}
                         />

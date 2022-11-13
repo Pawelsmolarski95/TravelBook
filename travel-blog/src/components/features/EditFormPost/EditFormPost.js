@@ -4,6 +4,10 @@ import { useNavigate, useParams, Navigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { getPostById } from "../../../redux/postsRedux";
+import { Button } from "react-bootstrap";
+import styles  from './EditFormPost.module.scss'
+import { Link } from 'react-router-dom';
+
 
 const EditFormPost = () => {
     
@@ -23,7 +27,10 @@ const EditFormPost = () => {
     
      
     return (
-        <>
+        <>  
+            <div className={styles.btn}>
+                <Button className="mt-4 mr-5 float-right" as={Link} to="/">X</Button>  
+            </div>
             <PostForm 
                 action={handleSubmit}
                 actionText='Edit Post'
