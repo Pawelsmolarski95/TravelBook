@@ -65,7 +65,6 @@ const PostForm = ({action,actionText, ...props}) => {
                             onChange={(e) => setAuthor(e.target.value)} 
                         />
                     </Form.Group>
-                    
                     <Form.Group className="mb-3" controlId="formBasicData">
                         <Form.Label>Published</Form.Label>
                         <DatePicker selected={publishedDate} onChange={setPublishedData} />
