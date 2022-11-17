@@ -1,0 +1,26 @@
+.navbarSubtitle {
+    display: flex;
+    margin:10px 50px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    
+    li {
+        list-style-type: none;
+    }
+}
+
+.link {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+
+@media (max-width:767px) {
+    .navbarSubtitle {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

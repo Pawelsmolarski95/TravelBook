@@ -1,0 +1,25 @@
+.title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtitle {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    
+}
+
+.btn {
+    height: 38px;
+    
+}
+@media (max-width: 767px) {
+    .title {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

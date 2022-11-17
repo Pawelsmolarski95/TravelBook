@@ -1,0 +1,18 @@
+.title {
+    margin-top: 12px ;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn {
+    align-self: center;
+    justify-self: flex-end;
+}
