@@ -52,6 +52,7 @@ const SinglePost = () => {
                     <Card.Text >
                         <p><b>Data:</b> {dateToStr(postData.publishedData)}</p> 
                         <p><b>Traveler:</b> {postData.author} </p>
+                        <p><b>Category:</b> {postData.category} </p>
                     </Card.Text>            
                 </Card.Body>
             </Card>

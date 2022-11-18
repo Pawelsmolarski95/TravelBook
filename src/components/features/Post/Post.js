@@ -22,6 +22,7 @@ const Post = (props) => {
                 <Card.Text>
                     <p><b>Data:</b> {dateToStr(props.publishedData) || '01-01-2022 '}</p> 
                     <p><b>Traveler:</b> {props.author || ''} </p>
+                    <p><b>Category:</b> {props.category || ''} </p>  
                 </Card.Text>        
                 <Link className={styles.btn} key={props.id} to={"/post/" + props.id}>
                     <Button variant="primary" >Read more</Button>

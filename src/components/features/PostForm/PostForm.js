@@ -7,8 +7,9 @@ import 'react-quill/dist/quill.snow.css';
 import { useState } from 'react';
 import DatePicker from "react-datepicker";
 import { useForm } from "react-hook-form";
-
 import "react-datepicker/dist/react-datepicker.css";
+import { useSelector } from 'react-redux';
+import { getAllCategory } from '../../../redux/categoryRedux';
 
 
 
@@ -24,10 +25,14 @@ const PostForm = ({action,actionText, ...props}) => {
     const [shortDescription, setShortDescription] = useState(props.shortDescription || '');
     const [mainDescription, setMainDescription] = useState(props.mainDescription || '');
     const [destination, setDestination] = useState(props.destination || ''); 
+    const [category, setCategory] = useState(props.category || '');
     const [errorMainDescripion, setErrorMainDescription] = useState(false);
     const [errorPublishedData, setErrorPublishedData] = useState(false)
     
+    
     const { register, handleSubmit: validate, formState: { errors } } = useForm();
+    
+    const categories = useSelector(getAllCategory);
      
     const handleSubmit = () => {
         
@@ -35,7 +40,7 @@ const PostForm = ({action,actionText, ...props}) => {
         setErrorPublishedData(!publishedData);
         
         if(mainDescription && publishedData){ 
-            action({title, author, publishedData, image, shortDescription, mainDescription, destination})
+            action({title, author, publishedData, image, shortDescription, mainDescription, destination, category})
         }
         
     };
@@ -85,6 +90,22 @@ const PostForm = ({action,actionText, ...props}) => {
                         <DatePicker selected={publishedData} onChange={setPublishedData} />
                         {errorPublishedData && <span className="d-block form-text text-danger mt-2">Choose date yours journey</span>}
                     </Form.Group>
+                    
+                    <Form.Group>
+                        <Form.Label>Categories</Form.Label>
+                        <Form.Control 
+                            as='select'
+                            placeholder='Choose region of the world'
+                            onChange={(e) => setCategory(e.target.value)}>
+                            {categories.map((category, index) =>
+                                <option 
+                                    key={index}
+                                    value={category}>{category}</option>
+                            )}
+                        </Form.Control>
+                        
+                    </Form.Group>
+                    
                     
                     <Form.Group className="mb-3" controlId="formBasicImage">
                         <Form.Label>Image</Form.Label>

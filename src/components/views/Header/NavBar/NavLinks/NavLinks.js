@@ -11,6 +11,9 @@ const NavLinks = () => {
                 <NavLink className={styles.link}to="/"> Home </NavLink>
             </li>
             <li>
+                <NavLink className={styles.link} to="/categories"> Categories </NavLink>
+            </li>
+            <li>
                 <NavLink className={styles.link} to="/about"> About </NavLink>
             </li>
             

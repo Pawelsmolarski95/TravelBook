@@ -9,6 +9,8 @@ import './App.css';
 import Footer from './components/views/Footer/Footer';
 import Header from './components/views/Header/Header';
 import SinglePost from './components/pages/SinglePost/SinglePost';
+import Categories from './components/pages/Categories/Categories';
+import Category from './components/pages/Category/Category';
 
 
 
@@ -24,6 +26,8 @@ function App() {
           <Route  path='/post/:id' element={<SinglePost/>}/>
           <Route  path='/post/add' element={<AddPost/>}/>
           <Route  path='/post/edit/:postId' element={<EditPost/>}/>
+          <Route  path='/categories' element={<Categories/>}/>
+          <Route  path='/categories/:categoryId' element={<Category/>}/>
           <Route  path='/about' element={<About/>}/>
           <Route  path='*' element={<NotFound/>}/>
         </Routes>

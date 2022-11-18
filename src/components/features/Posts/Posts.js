@@ -28,6 +28,7 @@ const Posts = () => {
                         shortDescription={post.shortDescription}
                         content={post.content}
                         publishedData={post.publishedData}
+                        category={post.category}
                         author={post.author}
                     />
                 ))}

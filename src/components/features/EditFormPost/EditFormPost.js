@@ -40,6 +40,7 @@ const EditFormPost = () => {
                 author={postData.author}
                 shortDescription={postData.shortDescription}
                 publishedData={postData.publishedData}
+                categories={postData.categories}
                 mainDescription={postData.mainDescription}
                 destination={postData.destination}
             />
