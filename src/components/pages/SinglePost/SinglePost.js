@@ -8,6 +8,7 @@ import { AiOutlineArrowLeft } from 'react-icons/ai'
 import { useState } from "react";
 import RemoveModal from "../../features/RemoveModal/RemoveModal";
 import { removePost } from '../../../redux/postsRedux'
+import { dateToStr } from "../../../utils/dateToStr";
 
 
 
@@ -49,7 +50,7 @@ const SinglePost = () => {
                         <p dangerouslySetInnerHTML={{ __html: postData.mainDescription }}className={styles.p} />
                     </Card.Text>
                     <Card.Text >
-                        <p><b>Data:</b> {postData.publishedDate}</p> 
+                        <p><b>Data:</b> {dateToStr(postData.publishedData)}</p> 
                         <p><b>Traveler:</b> {postData.author} </p>
                     </Card.Text>            
                 </Card.Body>

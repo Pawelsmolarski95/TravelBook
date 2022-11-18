@@ -27,7 +27,7 @@ const Posts = () => {
                         titile={post.titile}
                         shortDescription={post.shortDescription}
                         content={post.content}
-                        publishedDate={post.publishedDate}
+                        publishedData={post.publishedData}
                         author={post.author}
                     />
                 ))}

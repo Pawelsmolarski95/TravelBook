@@ -19,6 +19,7 @@
     "react-bootstrap": "2.0",
     "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "7.19.5",
     "react-icons": "^4.6.0",
     "react-quill": "^2.0.0",
     "react-redux": "7.2.6",

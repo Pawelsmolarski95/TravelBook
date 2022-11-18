@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import styles from './Post.module.scss'
 import { Link } from 'react-router-dom';
+import { dateToStr } from '../../../utils/dateToStr';
 
 
 
@@ -19,7 +20,7 @@ const Post = (props) => {
                     {props.shortDescription || ''}
                 </Card.Text>
                 <Card.Text>
-                    <p><b>Data:</b> {props.publishedDate || '01-01-2022 '}</p> 
+                    <p><b>Data:</b> {dateToStr(props.publishedData) || '01-01-2022 '}</p> 
                     <p><b>Traveler:</b> {props.author || ''} </p>
                 </Card.Text>        
                 <Link className={styles.btn} key={props.id} to={"/post/" + props.id}>

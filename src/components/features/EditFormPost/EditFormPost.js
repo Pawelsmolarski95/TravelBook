@@ -39,7 +39,7 @@ const EditFormPost = () => {
                 image={postData.image}
                 author={postData.author}
                 shortDescription={postData.shortDescription}
-                publishedDate={postData.publishedDate}
+                publishedData={postData.publishedData}
                 mainDescription={postData.mainDescription}
                 destination={postData.destination}
             />
