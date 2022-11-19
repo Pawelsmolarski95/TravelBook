@@ -14,3 +14,16 @@
     grid-template-columns: 1fr 1fr 1fr;
     cursor: pointer;
 }
+
+@media  (max-width:767px){
+    .ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wrapper {
+        padding: 0;
+    }
+}
