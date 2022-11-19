@@ -1,0 +1,31 @@
+
+.wrapper {
+   
+}
+.wrapper:hover {
+    opacity: 0.5
+}
+    
+.imgWrapper {
+    position: relative;    
+}
+
+.img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    
+    
+    
+}
+
+.link {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

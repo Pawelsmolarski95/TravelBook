@@ -57,13 +57,38 @@ const initialState = {
             shortDescription: 'Examples best campsites in the Netherlands...',
             content: 'Main content of the article',
             publishedData:  new Date('02-02-2022'),
-            category: 'Europe',
+            category: 'Asia',
             author: 'Jan Kowalski',
             mainDescription: 'The Netherlands is a small country sandwiched between Belgium and Germany in Western Europe. The North Sea, located to the north and west of the Netherlands, is continually battering the land The Netherlands is larger than the state of Maryland, but smaller than West Virginia. The Dutch have a saying God made the Earth, but the Dutch made Holland The North Sea would have washed away the Netherlands if the Dutch had not erected defenses to protect their land. Over the centuries, the Dutch have built series of canals, dams, dikes, and pumping stations to keep the sea and rivers back. Today more than 1,491 miles (2,400 kilometers) of dikes shield the low, flat land—almost half of which lies below sea level—from the North Sea. Without the existing dikes 65 percent of the country would be flooded daily '
         }    
     ],
     
-    categories: ['Europe', 'Asia', 'North America', 'South America', 'Australia and Oceania']
+    categories: [
+        {
+            name: 'Europe',
+            image: 'https://images.pexels.com/photos/681405/pexels-photo-681405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        },
+        {
+            name: 'Asia', 
+            image: 'https://images.pexels.com/photos/235731/pexels-photo-235731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        },
+        {
+            name: 'North America',
+            image: 'https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        },
+        {  
+            name: 'South America',
+            image: 'https://images.pexels.com/photos/3879067/pexels-photo-3879067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        },
+        {
+            name: 'Australia',
+            image: 'https://images.pexels.com/photos/7088958/pexels-photo-7088958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+        },
+        {   
+            name: 'Oceania',
+            image: 'https://images.pexels.com/photos/3637657/pexels-photo-3637657.jpeg?auto=compress&cs=tinysrgb&w=600'
+        }
+    ]
     
 }
 

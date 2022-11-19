@@ -1,6 +1,7 @@
 
 
-export const getAllCategory = ( state ) => state.categories ; 
+export const getAllCategories = ( state ) => state.categories ; 
+
 
 
 const categoriesReducer = (statePart = [], action) => {

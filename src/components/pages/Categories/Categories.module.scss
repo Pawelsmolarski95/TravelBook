@@ -1,1 +1,16 @@
 
+.wrapper {
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem ;
+    margin-bottom: 5rem;
+}
+
+.ul {
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    cursor: pointer;
+}

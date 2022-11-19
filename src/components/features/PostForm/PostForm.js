@@ -9,7 +9,7 @@ import DatePicker from "react-datepicker";
 import { useForm } from "react-hook-form";
 import "react-datepicker/dist/react-datepicker.css";
 import { useSelector } from 'react-redux';
-import { getAllCategory } from '../../../redux/categoryRedux';
+import { getAllCategories } from '../../../redux/categoryRedux';
 
 
 
@@ -27,12 +27,12 @@ const PostForm = ({action,actionText, ...props}) => {
     const [destination, setDestination] = useState(props.destination || ''); 
     const [category, setCategory] = useState(props.category || '');
     const [errorMainDescripion, setErrorMainDescription] = useState(false);
-    const [errorPublishedData, setErrorPublishedData] = useState(false)
+    const [errorPublishedData, setErrorPublishedData] = useState(false);
     
     
     const { register, handleSubmit: validate, formState: { errors } } = useForm();
     
-    const categories = useSelector(getAllCategory);
+    const categories = useSelector(getAllCategories);
      
     const handleSubmit = () => {
         
@@ -44,7 +44,7 @@ const PostForm = ({action,actionText, ...props}) => {
         }
         
     };
-    
+        
         return (
             <Container className=' col-xl-9 my-4'>
                 <h1 className={styles.h1}>{actionText}</h1>
@@ -100,12 +100,11 @@ const PostForm = ({action,actionText, ...props}) => {
                             {categories.map((category, index) =>
                                 <option 
                                     key={index}
-                                    value={category}>{category}</option>
+                                    value={category.name}>{category.name}</option>
                             )}
                         </Form.Control>
                         
                     </Form.Group>
-                    
                     
                     <Form.Group className="mb-3" controlId="formBasicImage">
                         <Form.Label>Image</Form.Label>
