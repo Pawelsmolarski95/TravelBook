@@ -1,4 +1,4 @@
---> Check online: https://yourtravelbook.netlify.app/ <--
+--> Check online: https://yourtravelblog.netlify.app <--
 
 # Getting Started with Create React App
 
